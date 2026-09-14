@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prayas Studio — Inspire. Design. Discover.</title>
+<meta name="description" content="Prayas Studio is a creative studio crafting worlds, characters, and brands with obsessive craft." />
+
+<link rel="icon" href="assets/prayas-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Ember particle canvas that sits behind the hero -->
+<canvas id="scene-canvas"></canvas>
+
+<div class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Prayas Studio home">
+      <img src="assets/prayas-logo.png" alt="Prayas Studio" class="brand-mark" />
+      <span class="brand-word">Prayas<span class="brand-word-sub">Studio</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="hero-kicker reveal-item">A studio forged for worlds worth remembering</p>
+      <h1 class="hero-title">
+        <span class="line reveal-item">Inspire.</span>
+        <span class="line reveal-item">Design.</span>
+        <span class="line reveal-item">Discover.</span>
+      </h1>
+      <p class="hero-sub reveal-item">
+        Prayas Studio builds characters, worlds, and brand identity for teams who
+        refuse to ship something ordinary.
+      </p>
+      <a href="#work" class="hero-cta reveal-item">
+        <span>See the work</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span class="scroll-cue-line"></span>
+      <span class="scroll-cue-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-copy">
+        <p class="section-kicker reveal-item">Who we are</p>
+        <h2 class="about-title reveal-item">
+          We treat every project like it has to survive contact with a real audience.
+        </h2>
+        <p class="reveal-item">
+          Founded on a simple word — <em>prayas</em>, effort — the studio exists to put
+          real craft behind ambitious ideas. We work at the intersection of narrative
+          design, illustration, and brand identity, building visual worlds that hold
+          up under scrutiny, not just under a first glance.
+        </p>
+        <p class="reveal-item">
+          Small team, senior hands on every brief. No hand-offs to juniors you never
+          meet, no templates dressed up as concepts.
+        </p>
+
+        <dl class="about-stats reveal-item">
+          <div>
+            <dt>Founded</dt>
+            <dd>2023</dd>
+          </div>
+          <div>
+            <dt>Disciplines</dt>
+            <dd>4</dd>
+          </div>
+          <div>
+            <dt>Based</dt>
+            <dd>Remote-first</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="about-visual">
+        <div class="shard-frame">
+          <canvas id="about-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <p class="section-kicker reveal-item">What we do</p>
+      <h2 class="section-title reveal-item">Four disciplines. One standard of craft.</h2>
+
+      <div class="service-list">
+        <article class="service-row reveal-item">
+          <h3>Game &amp; Character Design</h3>
+          <p>Concept art, character sheets, and world-building that gives a project
+            a visual identity before a single line of dialogue is written.</p>
+        </article>
+
+        <article class="service-row reveal-item">
+          <h3>Brand &amp; Visual Identity</h3>
+          <p>Logos, type systems, and colour languages built to survive being
+            printed, animated, and scaled to a favicon without falling apart.</p>
+        </article>
+
+        <article class="service-row reveal-item">
+          <h3>3D Art &amp; Animation</h3>
+          <p>Modeling, lighting, and motion for cinematics, key art, and
+            in-engine assets that need to feel expensive.</p>
+        </article>
+
+        <article class="service-row reveal-item">
+          <h3>Illustration &amp; Key Art</h3>
+          <p>Hero art, marketing key visuals, and editorial illustration with a
+            consistent hand across an entire campaign.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <p class="section-kicker reveal-item">Selected work</p>
+      <h2 class="section-title reveal-item">A handful of the worlds we've built.</h2>
+
+      <div class="work-grid">
+        <a class="work-card reveal-item" href="#" data-tone="ember">
+          <div class="work-card-media"></div>
+          <div class="work-card-meta">
+            <h3>Ashfall Chronicles</h3>
+            <span>Character design · Key art</span>
+          </div>
+        </a>
+
+        <a class="work-card reveal-item" href="#" data-tone="steel">
+          <div class="work-card-media"></div>
+          <div class="work-card-meta">
+            <h3>Voidrunner</h3>
+            <span>Brand identity · UI concepts</span>
+          </div>
+        </a>
+
+        <a class="work-card reveal-item" href="#" data-tone="crimson">
+          <div class="work-card-media"></div>
+          <div class="work-card-meta">
+            <h3>Order of Embers</h3>
+            <span>World-building · Illustration</span>
+          </div>
+        </a>
+
+        <a class="work-card reveal-item" href="#" data-tone="iron">
+          <div class="work-card-media"></div>
+          <div class="work-card-meta">
+            <h3>Hollow Vale</h3>
+            <span>3D environment art</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-inner contact-grid">
+      <div>
+        <p class="section-kicker reveal-item">Start a project</p>
+        <h2 class="contact-title reveal-item">Tell us what you're building.</h2>
+        <p class="reveal-item">
+          We take on a limited number of projects at a time so every one gets the
+          same attention. Reach out and we'll get back to you within two working days.
+        </p>
+      </div>
+
+      <div class="contact-details reveal-item">
+        <a href="mailto:hello@prayasstudio.com" class="contact-email">hello@prayasstudio.com</a>
+        <ul class="contact-social">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">ArtStation</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <img src="assets/prayas-logo.png" alt="Prayas Studio" class="footer-mark" />
+    <p>&copy; <span id="year"></span> Prayas Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+<script type="module" src="js/scene.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
